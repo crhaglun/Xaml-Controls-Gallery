@@ -38,6 +38,8 @@
                     <TextBlock Margin="0,16,0,0" Text="Modify content" />
                     <Button Margin="0,12,0,0" Content="Add secondary commands" Click="AddSecondaryCommands_Click" />
                     <Button Margin="0,12,0,0" Content="Remove secondary commands" Click="RemoveSecondaryCommands_Click" />
+                    <Button Margin="0,12,0,0" Content="Hide secondary commands" Click="HideSecondaryCommands_Click" />
+                    <Button Margin="0,12,0,0" Content="Show secondary commands" Click="ShowSecondaryCommands_Click" />
                 </StackPanel>
             </local:ControlExample.Options>
 

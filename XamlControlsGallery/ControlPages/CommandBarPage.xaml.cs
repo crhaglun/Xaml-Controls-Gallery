@@ -7,6 +7,7 @@
 // PURPOSE, MERCHANTABILITY, OR NON-INFRINGEMENT.
 //
 //*********************************************************
+using System.Linq;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Navigation;
@@ -132,5 +133,20 @@ namespace AppUIBasics.ControlPages
             });
         }
 
+        private void HideSecondaryCommands_Click(object sender, RoutedEventArgs e)
+        {
+            foreach (var uIElement in PrimaryCommandBar.SecondaryCommands.Cast<UIElement>())
+            {
+                uIElement.Visibility = Visibility.Collapsed;
+            }
+        }
+
+        private void ShowSecondaryCommands_Click(object sender, RoutedEventArgs e)
+        {
+            foreach (var uIElement in PrimaryCommandBar.SecondaryCommands.Cast<UIElement>())
+            {
+                uIElement.Visibility = Visibility.Visible;
+            }
+        }
     }
 }
